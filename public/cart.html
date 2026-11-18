@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your cart - Simple Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Simple Store</a>
+    <nav>
+      <a href="/">Products</a>
+      <a href="/cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="/login.html" id="account-link">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your cart</h1>
+    <p id="message" class="message" aria-live="polite"></p>
+    <div id="cart-items"></div>
+    <div id="cart-summary"></div>
+  </main>
+
+  <footer>Simple Store · Demo shop</footer>
+</body>
+</html>

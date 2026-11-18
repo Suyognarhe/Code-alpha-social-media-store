@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Simple Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Simple Store</a>
+    <nav>
+      <a href="/">Products</a>
+      <a href="/cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="/register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Welcome back</h1>
+    <p id="message" class="message" aria-live="polite"></p>
+
+    <form id="login-form" class="form">
+      <label>Email
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <label>Password
+        <input type="password" name="password" required autocomplete="current-password">
+      </label>
+      <button type="submit">Log in</button>
+    </form>
+
+    <p>New here? <a href="/register.html">Create an account</a>.</p>
+  </main>
+</body>
+</html>

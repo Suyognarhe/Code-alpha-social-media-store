@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Simple Store</a>
+    <nav>
+      <a href="/">Products</a>
+      <a href="/cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="/login.html" id="account-link">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Thoughtful everyday goods</p>
+      <h1>Find something you’ll love.</h1>
+      <p>Browse our small collection of useful, well-made products.</p>
+    </section>
+
+    <section>
+      <h2>Products</h2>
+      <p id="message" class="message" aria-live="polite"></p>
+      <div id="products" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer>Simple Store · Demo shop</footer>
+</body>
+</html>

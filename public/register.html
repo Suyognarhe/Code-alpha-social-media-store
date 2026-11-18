@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account - Simple Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">Simple Store</a>
+    <nav>
+      <a href="/">Products</a>
+      <a href="/cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="/login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Create an account</h1>
+    <p id="message" class="message" aria-live="polite"></p>
+
+    <form id="register-form" class="form">
+      <label>Name
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>Email
+        <input type="email" name="email" required autocomplete="email">
+      </label>
+      <label>Password (at least 8 characters)
+        <input type="password" name="password" required minlength="8" autocomplete="new-password">
+      </label>
+      <button type="submit">Create account</button>
+    </form>
+
+    <p>Already have an account? <a href="/login.html">Log in</a>.</p>
+  </main>
+</body>
+</html>
